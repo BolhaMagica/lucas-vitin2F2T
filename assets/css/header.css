@@ -1,3 +1,6 @@
+body{
+    background-color: #ebecce;
+}
 .cabecalho{
     display: flex;
     justify-content:space-between;
@@ -9,4 +12,26 @@
     display: inline-block;
     background-position: center;
     background-repeat: no-repeat;
+}
+.menu-lista{
+    display: none;
+    position: absolute;
+    width: 60vw;
+    text-transform: uppercase;
+}
+.seletor-menu:checked ~ .menu-lista{
+    display: block
+}
+.menu-lista-item, .menu-lista-Titulo{
+    background-color: white;
+    padding: 1em;
+}
+.menu-lista-Titulo{
+    color: var(--laranja);
+}
+.menu-lista-link{
+    background: var(--azul-oleg--);
+    --webkit-background-clip: text;
+    background-clip: text;
+    text-transform: uppercase;
 }
